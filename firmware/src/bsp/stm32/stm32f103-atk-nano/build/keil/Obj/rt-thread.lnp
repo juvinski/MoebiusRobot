@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+".\build\keil\obj\main.o"
+".\applications\rt-thread.lib"
+".\build\keil\obj\drv_gpio.o"
+".\build\keil\obj\drv_usart.o"
+".\build\keil\obj\drv_pwm.o"
+".\build\keil\obj\drv_adc.o"
+".\build\keil\obj\drv_common.o"
+".\build\keil\obj\drv_pulse_encoder.o"
+".\build\keil\obj\drv_soft_i2c.o"
+".\build\keil\obj\mutex.o"
+".\build\keil\obj\semaphore.o"
+".\build\keil\obj\thread.o"
+".\build\keil\obj\crt.o"
+".\build\keil\obj\crt_init.o"
+".\build\keil\obj\kinematics.o"
+".\build\keil\obj\battery.o"
+".\build\keil\obj\car.o"
+".\build\keil\obj\motors.o"
+".\build\keil\obj\datascope.o"
+".\build\keil\obj\imu_dev.o"
+--strict --scatter ".\board\linker_scripts\link.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\build\keil\List\rt-thread.map" -o .\build\keil\Obj\rt-thread.axf

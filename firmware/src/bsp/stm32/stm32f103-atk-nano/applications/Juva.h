@@ -1,0 +1,1 @@
+char JuvaBUF[50];
